@@ -1,4 +1,4 @@
-module Players::Human < Player
+module Players::Human
 
   def move
 
