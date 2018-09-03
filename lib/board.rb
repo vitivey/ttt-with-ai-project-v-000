@@ -42,7 +42,7 @@ class Board
 
   def update(input, player)
     binding.pry
-    cells[input.to_i-1]=player
+    cells[input.to_i-1]=player.token
   end
 
 
