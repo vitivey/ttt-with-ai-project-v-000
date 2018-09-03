@@ -3,8 +3,9 @@ module Players
 
     class Human < Player
 
-        def move(input)
-          input-1
+        def move(board)
+          value=gets
+          board[value]
         end
 
     end
