@@ -6,7 +6,7 @@ module Players
 
         def move(board)
           value=gets
-          board.cells[value.to_i]
+          board.cells[value.to_i-1]
 
         end
 
