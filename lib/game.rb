@@ -13,7 +13,6 @@ class Game
     ]
 
   def initialize(player_1, player_2, board)
-    binding.pry
     player_1=Player.new("#{player_1.token}")
     player_2=Player.new("#{player_2.token}")
     board=Board.new
