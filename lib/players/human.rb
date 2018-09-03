@@ -1,5 +1,6 @@
 require_relative "../lib/player.rb"
-module Players::Human #< Player
+module Players
+  class Human < Player
 
   def move
 
