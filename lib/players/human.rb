@@ -3,8 +3,8 @@ module Players
 
     class Human < Player
 
-        def move
-
+        def move(input)
+          input-1
         end
 
     end
