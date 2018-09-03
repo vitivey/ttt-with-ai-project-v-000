@@ -1,4 +1,5 @@
 # require_relative "../lib/player.rb"
+require "pry"
 module Players
 
     class Human < Player
@@ -6,6 +7,7 @@ module Players
         def move(board)
           value=gets
           board[value]
+          binding.pry
         end
 
     end
