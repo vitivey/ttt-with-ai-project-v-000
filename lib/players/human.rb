@@ -1,4 +1,4 @@
-require_relative "../lib/player"
+# require_relative "../lib/player.rb"
 module Players
 
     class Human < Player
@@ -6,7 +6,7 @@ module Players
         def move
 
         end
-        
+
     end
-    
+
 end
