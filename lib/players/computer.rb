@@ -2,9 +2,9 @@ module Players
 
     class Computer < Player
 
-        def move
-
-        end
+      def move(board)
+        value=gets
+      end
 
     end
 
