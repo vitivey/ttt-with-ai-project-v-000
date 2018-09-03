@@ -1,7 +1,11 @@
-# module Players::Computer
-#
-#   def move
-#
-#   end
-#
-# end
+module Players
+
+    class Computer < Player
+
+        def move
+
+        end
+
+    end
+
+end
