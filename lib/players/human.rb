@@ -6,8 +6,9 @@ module Players
 
         def move(board)
           value=gets
-          board.cells[value]
           binding.pry
+
+          board.cells[value]
 
         end
 
