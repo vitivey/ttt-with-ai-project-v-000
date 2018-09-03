@@ -40,7 +40,8 @@ class Board
     input.to_i >=1 && input.to_i <=9 && taken?(input)==false
   end
 
-  def update(input, player="X")
+  def update(input, player)
+    binding.pry
     cells[input.to_i-1]=player
   end
 
