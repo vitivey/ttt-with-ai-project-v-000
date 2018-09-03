@@ -18,14 +18,17 @@ class Game
     board=Board.new
   end
 
-  def player_1
+  def current_player
 
   end
 
-  def player_2
+  def won?
 
   end
 
+  def draw?
+
+  end
 
 
 end
