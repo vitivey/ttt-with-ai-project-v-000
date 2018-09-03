@@ -5,9 +5,10 @@ module Players
     class Human < Player
 
         def move(board)
+          binding.pry
+
           value=gets
           board[value]
-          binding.pry
         end
 
     end
