@@ -41,7 +41,7 @@ class Board
   end
 
   def update(input, player="X")
-    cells[input.to_i-1]=token(player)
+    cells[input.to_i-1]=player
   end
 
   def token(player)
