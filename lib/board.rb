@@ -44,7 +44,5 @@ class Board
     cells[input.to_i-1]=player
   end
 
-  def token(player)
 
-  end
 end
