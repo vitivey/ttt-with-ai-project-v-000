@@ -12,7 +12,7 @@ class Game
       [2,4,6]
     ]
 
-  def initialize(player_1, player_2, board)
+  def initialize(player_1="X", player_2="O", board=[])
     self.player_1=player_1
     self.player_2=player_2
     self.board=board
