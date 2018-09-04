@@ -61,6 +61,7 @@ class Game
 
   def turn
     value = player_1.move(board)
+    binding.pry
     if board.valid_move?(value)
       player_2.move(board)
     else
