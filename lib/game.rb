@@ -1,5 +1,4 @@
 class Game
-  attr_accessor :board, :player_1, :player_2
 
   WIN_COMBINATIONS=[
       [0,1,2],
@@ -13,9 +12,21 @@ class Game
     ]
 
   def initialize(player_1, player_2, board)
-    self.player_1=player_1.token
-    self.player_2=player_2.token
-    self.board=board.cells
+    self.player_1=player_1
+    self.player_2=player_2
+    self.board=board
+  end
+
+  def board
+    board.cells
+  end
+
+  def player_1
+    player_1.token
+  end
+
+  def player_2
+    player_2.token
   end
 
   def current_player
