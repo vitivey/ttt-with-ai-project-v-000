@@ -19,9 +19,13 @@ class Game
     self.board=board
   end
 
-
+  
   def current_player
-    board.cells
+    if player_1.token = "X" && board.turn_count.even?
+      "X"
+    else
+      "O"
+    end
   end
 
   def won?
