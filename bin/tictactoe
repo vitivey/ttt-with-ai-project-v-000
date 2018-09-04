@@ -27,7 +27,7 @@ end
 start
 
 puts "Would you like to play again? y/n"
-input = gets
+input = gets.strip
 if input=="y"
   start
 else
