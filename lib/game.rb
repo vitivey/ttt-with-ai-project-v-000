@@ -32,7 +32,6 @@ class Game
   def won?
     combo=[]
     WIN_COMBINATIONS.select do |win_option|
-
       match_check=board.cells.values_at(win_option[0],win_option[1],win_option[2])
       combo=win_option if match_check.all?{|token| token=="X"}
       combo=win_option if match_check.all?{|token| token=="O"}
@@ -57,8 +56,7 @@ class Game
   end
 
   def winner
-    won?[0] if won?
-    binding.pry
+    board.cells[won?[0]] if won?
   end
 
   def turn
