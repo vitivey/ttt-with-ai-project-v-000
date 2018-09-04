@@ -27,7 +27,6 @@ class Game
     @player_2=Player.new(token)
   end
 
-  ded
 
   def current_player
 
