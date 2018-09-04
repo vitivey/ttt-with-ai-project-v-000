@@ -5,6 +5,7 @@ module Players
     class Human < Player
 
         def move(board)
+          puts "Enter move"
           value=gets
           # board.cells[value.to_i]
 
