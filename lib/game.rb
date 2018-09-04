@@ -58,5 +58,8 @@ class Game
     won[0] if won?
   end
 
+  def turn
+
+  end
 
 end
