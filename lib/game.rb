@@ -47,7 +47,11 @@ class Game
   end
 
   def draw?
-    false if won? || !board.cells.include?(" ")
+    if won? || !board.cells.include?(" ")
+      false 
+    else
+      true
+    end
   end
 
   def over
