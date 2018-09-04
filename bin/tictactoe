@@ -11,7 +11,7 @@ def start
     type=gets.strip
   end
   puts "Who should go first? (and be X) Computer or Human?" if type.to_i == 1
-  first=gets if type.to_i == 1
+  first=gets.strip if type.to_i == 1
 
     case type.to_i
       when 0
