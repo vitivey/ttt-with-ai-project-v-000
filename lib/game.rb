@@ -57,7 +57,7 @@ class Game
   end
 
   def winner
-    won[0] if won?
+    won?[0] if won?
   end
 
   def turn
