@@ -26,7 +26,7 @@ class Game
 
   def won?
     board.include
-      
+
   end
 
   def draw?
