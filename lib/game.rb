@@ -33,7 +33,7 @@ class Game
     WIN_COMBINATIONS.select do |win_option|
       binding.pry
 
-      board.cells.values_at(win_option)
+      board.cells.values_at(win_option.join(","))
     end
 
   end
