@@ -65,7 +65,7 @@ class Game
         puts "invalid"
         value = current_player.move(board)
       else
-        value = current_player.move(board)
+        turn
       end
   end
 
