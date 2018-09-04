@@ -13,12 +13,16 @@ def start
     case type
     when 0
       Game.new(player_1=Players::Computer.new("X"), player_2=Players::Computer.new("O"), board=Board.new)
+      play
     when 1 && first=="Human"
       Game.new(player_1=Players::Human.new("X"), player_2=Players::Computer.new("O"), board=Board.new)
+      play
     when 1 && first=="Computer"
       Game.new(player_1=Players::Computer.new("X"), player_2=Players::Human.new("O"), board=Board.new)
+      play
     when 2
       Game.new(player_1=Players::Human.new("X"), player_2=Players::Human.new("O"), board=Board.new)
+      play
     end
 end
 start
