@@ -63,10 +63,11 @@ class Game
       value = current_player.move(board)
       if !board.valid_move?(value)
         puts "invalid"
-        turn
+        value = current_player.move(board)
       else
         value = current_player.move(board)
       end
+      turn_count
   end
 
 
