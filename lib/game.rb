@@ -67,7 +67,6 @@ class Game
       else
         value = current_player.move(board)
       end
-    end
   end
 
 end
