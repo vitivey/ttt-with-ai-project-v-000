@@ -11,7 +11,7 @@ def start
     type=gets.strip
   end
 
-  if type.to_1==1
+  if type.to_i==1
     puts "Who should go first? (and be X) Computer or Human?"
     first=gets.strip
     until first == "Computer" || first =="Human"
