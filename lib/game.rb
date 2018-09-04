@@ -62,17 +62,13 @@ class Game
   def turn
     count=0
     while count <= board.cells.size
-      binding.pry
       value = current_player.move(board)
       if !board.valid_move?(value)
         puts "invalid"
-        value = current_player.move(board) unless board.valid_move?(value)
-      else
-        value
+        value = current_player.move(board)
       end
       count+=1
     end
-
   end
 
 end
