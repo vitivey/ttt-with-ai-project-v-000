@@ -3,7 +3,6 @@
 require_relative '../config/environment'
 
 puts "Welcome to Tic Tac Toe!"
-self.start
 
 def start
   puts "What type of game do you want to play? 0,1, or 2 player"
@@ -22,6 +21,7 @@ def start
       Game.new(player_1=Players::Human.new("X"), player_2=Players::Human.new("O"), board=Board.new)
     end
 end
+start
 
 puts "Would you like to play again? y/n"
 input = gets
