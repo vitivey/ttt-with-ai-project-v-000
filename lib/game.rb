@@ -1,6 +1,6 @@
 class Game
   attr_accessor :board, :player_1, :player_2
-  attr_reader 
+  attr_reader
 
   WIN_COMBINATIONS=[
       [0,1,2],
@@ -19,10 +19,10 @@ class Game
     self.board=board
   end
 
-  def player_1=(token)
+  # def player_1=(token)
   #   @player_1=Player.new(token)
   # end
-  # 
+  #
   # def player_2=(token)
   #   @player_2=Player.new(token)
   # end
