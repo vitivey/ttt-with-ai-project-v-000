@@ -65,7 +65,7 @@ class Game
       value = current_player.move(board)
       if !board.valid_move?(value)
         puts "invalid"
-        value = current_player.move(board) until board.valid_move?(value)
+        value = current_player.move(board) unless board.valid_move?(value)
       else
         value
       end
