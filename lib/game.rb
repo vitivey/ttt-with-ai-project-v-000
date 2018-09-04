@@ -19,7 +19,7 @@ class Game
     self.board=board
   end
 
-  
+
   def current_player
     if player_1.token = "X" && board.turn_count.even?
       "X"
