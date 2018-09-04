@@ -29,12 +29,17 @@ class Game
   end
 
   def won?
-    board.include
+    x_wins = board.cells.map {|token| board.cells(token).index if token == "X"}
+    binding.pry
+    WIN_COMBINATIONS.select do |win_option|
+      
+    end
+    board.cells.select d
 
   end
 
   def draw?
-
+    !board.cells.include?(" ")
   end
 
 
