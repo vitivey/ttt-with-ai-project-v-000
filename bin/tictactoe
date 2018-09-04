@@ -23,10 +23,10 @@ def start
     case type.to_i
       when 0
         Game.create(Players::Computer.new("X"), Players::Computer.new("O"), Board.new)
-      when 1 && first=="Human"
-        Game.create(Players::Human.new("X"), Players::Computer.new("O"), Board.new)
-      when 1 && first=="Computer"
-        Game.create(Players::Computer.new("X"), Players::Human.new("O"), Board.new)
+      when 1 
+        Game.create(Players::Human.new("X"), Players::Computer.new("O"), Board.new) if first =="Human"
+      when 1
+        Game.create(Players::Computer.new("X"), Players::Human.new("O"), Board.new) if first=="Computer"
       else
         Game.create(Players::Human.new("X"), Players::Human.new("O"), Board.new)
     end
