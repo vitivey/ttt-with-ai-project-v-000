@@ -60,7 +60,8 @@ class Game
   end
 
   def turn
-
+    count=0
+    while count <= board.cells.size
       value = current_player.move(board)
       if board.valid_move?(value)
         value
@@ -68,6 +69,8 @@ class Game
         puts "invalid"
         value = current_player.move(board)
       end
+      count+=1
+    end
 
   end
 
