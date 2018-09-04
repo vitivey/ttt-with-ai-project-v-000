@@ -31,8 +31,9 @@ class Game
 
   def won?
     WIN_COMBINATIONS.select do |win_option|
-      board.cells.values_at(win_option)
       binding.pry
+
+      board.cells.values_at(win_option)
     end
 
   end
