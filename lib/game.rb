@@ -76,6 +76,7 @@ class Game
       over?
       won?
       draw?
+      binding.pry
     end
 
     "Congratulations #{winner}!" if won?
