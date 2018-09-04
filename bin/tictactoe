@@ -25,4 +25,4 @@ end
 
 puts "Would you like to play again? y/n"
 input = gets
-start if input="y"
+start if input=="y"
