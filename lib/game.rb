@@ -80,7 +80,7 @@ class Game
 
     "Congratulations #{winner}!" if won?
     "Cat's Game!" if draw?
-    
+
 
   end
 
