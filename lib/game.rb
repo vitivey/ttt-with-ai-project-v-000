@@ -78,6 +78,12 @@ class Game
       draw?
     end
 
+    if won?
+      "Congratulations #{winner}!"
+    elsif draw?
+      "Cat's Game!"
+    end
+
   end
 
 end
