@@ -68,9 +68,7 @@ class Game
         puts "invalid"
         value = player_1.move(board)
       end
-
-
-      # player_2.move(board)
+      value = player_2.move(board)
 
   end
 
