@@ -66,7 +66,7 @@ class Game
         value = current_player.move(board)
       end
       board.update(value, current_player)
-      # board.turn_count
+      binding.pry
   end
 
 
