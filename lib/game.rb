@@ -71,6 +71,12 @@ class Game
 
 
   def play
+    while board.turn_count <= board.cells.size
+      turn
+      over?
+      won?
+      draw?
+    end
 
   end
 
