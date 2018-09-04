@@ -19,14 +19,6 @@ class Game
     self.board=board
   end
 
-  # def player_1=(token)
-  #   @player_1=Player.new(token)
-  # end
-  #
-  # def player_2=(token)
-  #   @player_2=Player.new(token)
-  # end
-
 
   def current_player
 
