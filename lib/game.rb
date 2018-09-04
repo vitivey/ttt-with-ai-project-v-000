@@ -31,7 +31,6 @@ class Game
 
   def won?
     WIN_COMBINATIONS.select do |win_option|
-      binding.pry
 
       match_check=board.cells.values_at(win_option[0],win_option[1],win_option[2])
       match_check.all?{|token| token=="X"}
