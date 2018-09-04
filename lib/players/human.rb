@@ -7,8 +7,6 @@ module Players
         def move(board)
           puts "Enter move between 1-9:"
           value=gets
-          # board.cells[value.to_i]
-
         end
 
     end
