@@ -13,7 +13,7 @@ class Game
       [2,4,6]
     ]
 
-  def initialize(player_1="X", player_2="O", board=[])
+  def initialize(player_1=Human.new("X"), player_2=Human.new("O"), board=[])
     self.player_1=player_1
     self.player_2=player_2
     self.board=board
@@ -21,11 +21,12 @@ class Game
 
 
   def current_player
-
+    board.cells
   end
 
   def won?
-
+    board.include
+      
   end
 
   def draw?
