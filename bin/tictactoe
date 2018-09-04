@@ -23,5 +23,6 @@ def start
     end
 end
 
-puts "Would you like to play again?"
-start
+puts "Would you like to play again? y/n"
+input = gets
+start if input="y"
