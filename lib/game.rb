@@ -52,7 +52,7 @@ class Game
     draw
   end
 
-  def over
+  def over?
     true if draw? || won?
   end
 
