@@ -12,9 +12,9 @@ def start
   end
 
   if type.to_1==1
-    puts "Who should go first? (and be X) Computer or Human?" 
-    first=gets.strip 
-    until first == "Computer" || "Human"
+    puts "Who should go first? (and be X) Computer or Human?"
+    first=gets.strip
+    until first == "Computer" || first =="Human"
       puts "Who should go first? (and be X) Computer or Human?"
       type=gets.strip
     end
