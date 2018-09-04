@@ -63,9 +63,9 @@ class Game
       value = current_player.move(board)
       if !board.valid_move?(value)
         puts "invalid"
-        value = current_player.move(board)
-      else
         turn
+      else
+        value = current_player.move(board)
       end
   end
 
