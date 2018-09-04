@@ -58,6 +58,7 @@ class Game
 
   def winner
     won?[0] if won?
+    binding.pry
   end
 
   def turn
