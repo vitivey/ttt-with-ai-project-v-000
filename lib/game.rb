@@ -30,7 +30,7 @@ class Game
 
   def won?
     WIN_COMBINATIONS.select do |win_option|
-      match_check= board.cells.values_at(win_option)
+      board.cells.values_at(win_option)
       binding.pry
     end
 
