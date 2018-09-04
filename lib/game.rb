@@ -77,8 +77,12 @@ class Game
     end
     puts "Congratulations #{winner}!" if won?
     puts "Cat's Game!" if draw?
+  end
 
-
+  def self.create(player_1, player_2, board)
+    game=Game.new(player_1, player_2, board)
+    display.board
+    play
   end
 
 end
