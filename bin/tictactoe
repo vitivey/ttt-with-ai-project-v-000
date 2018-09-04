@@ -5,15 +5,18 @@ require_relative '../config/environment'
 puts "Welcome to Tic Tac Toe!"
 puts "What type of game do you want to play? 0,1, or 2 player"
 type=gets.strip
-puts "Who should go first? (and be X)"
+puts "Who should go first? (and be X) Computer or Human?" if type == 1
 first=gets
 
-  if type == 0
+  case type
+  when 0 
+    Game.new(player_1=Players::Computer.new("X"), player_2=Players::Computer.new("O"), board=Board.new)
+  when 1 && first=="Human"
+    Game.new(player_1=Players::Human.new("X"), player_2=Players::Computer.new("O"), board=Board.new)
+  when 1 && first=="Computer"
+    Game.new(player_1=Players::Computer.new("X"), player_2=Players::Human.new("O"), board=Board.new)
+  when 2
     Game.new(player_1=Players::Human.new("X"), player_2=Players::Human.new("O"), board=Board.new)
-  elsif type==1
-    Game.new(player_1=Players::Human.new("X"), player_2=Players::Human.new("O"), board=Board.new)
-  else
-    Game.new==2
   end
 
 puts "Would you like to play again?"
