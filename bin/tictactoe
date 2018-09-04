@@ -1,3 +1,10 @@
 #!/usr/bin/env ruby
 
 require_relative '../config/environment'
+
+puts "Welcome to Tic Tac Toe!"
+puts "What type of game do you want to play?"
+input=gets
+puts "Who should go first? (X)"
+first=gets
+Game.new
