@@ -30,23 +30,20 @@ class Game
   end
 
   def won?
-    combo_x=[]
-    combo_o=[]
+    combo=[]
     WIN_COMBINATIONS.select do |win_option|
 
       match_check=board.cells.values_at(win_option[0],win_option[1],win_option[2])
-      combo_x=win_option if match_check.all?{|token| token=="X"}
-      combo_o=win_option if match_check.all?{|token| token=="O"}
+      combo=win_option if match_check.all?{|token| token=="X"}
+      combo=win_option if match_check.all?{|token| token=="O"}
     end
 
-    if combo_x != []
-      combo_x
-    elsif combo_o != []
-      combo_o
+    if combo != []
+      combo
     else
       false
     end
-    
+
   end
 
   def draw?
