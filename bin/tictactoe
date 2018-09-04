@@ -21,7 +21,7 @@ def start
       when 1 && first=="Computer"
         Game.create(Players::Computer.new("X"), Players::Human.new("O"), Board.new)
       else
-        Game.create
+        Game.create(Players::Human.new("X"), Players::Human.new("O"), Board.new)
     end
 end
 start
