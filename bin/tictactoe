@@ -10,8 +10,15 @@ def start
     puts "What type of game do you want to play? 0,1, or 2 player"
     type=gets.strip
   end
-  puts "Who should go first? (and be X) Computer or Human?" if type.to_i == 1
-  first=gets.strip if type.to_i == 1
+
+  if type.to_1==1
+    puts "Who should go first? (and be X) Computer or Human?" 
+    first=gets.strip 
+    until first == "Computer" || "Human"
+      puts "Who should go first? (and be X) Computer or Human?"
+      type=gets.strip
+    end
+  end
 
     case type.to_i
       when 0
