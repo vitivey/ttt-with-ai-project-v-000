@@ -83,5 +83,4 @@ class Game
     board.display
     game.play
   end
-binding.pry
 end
