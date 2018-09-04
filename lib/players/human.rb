@@ -5,7 +5,7 @@ module Players
     class Human < Player
 
         def move(board)
-          value=gets
+          value=gets.to_i
           # board.cells[value.to_i]
 
         end
