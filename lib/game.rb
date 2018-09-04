@@ -60,7 +60,12 @@ class Game
   end
 
   def turn
-
+    value = player_1.move(board)
+    if board.valid_move?(value)
+      player_2.move(board)
+    else
+      player_1.move(board)
+    end
   end
 
 end
