@@ -66,7 +66,6 @@ class Game
         value = current_player.move(board)
       end
       board.update(value, current_player)
-      binding.pry
   end
 
 
@@ -84,5 +83,5 @@ class Game
     board.display
     game.play
   end
-
+binding.pry
 end
