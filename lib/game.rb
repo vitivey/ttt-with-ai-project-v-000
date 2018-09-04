@@ -67,7 +67,7 @@ class Game
       else
         value = current_player.move(board)
       end
-      turn_count
+      board.turn_count
   end
 
 
