@@ -6,7 +6,7 @@ module Players
 
       def move(board)
         array = []
-        board.cells.each{|position| array << board.cells.index if position == " " }
+        board.cells.each_with_index {|position, index| array << index+1 if position == " " }
         binding.pry
         array.sample
       end
