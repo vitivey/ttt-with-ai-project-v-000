@@ -33,7 +33,7 @@ class Game
     WIN_COMBINATIONS.select do |win_option|
       binding.pry
 
-      match_check=board.cells.values_at(win_option.join(","))
+      match_check=board.cells.values_at(win_option[0],win_option[1],win_option[2])
 
     end
 
