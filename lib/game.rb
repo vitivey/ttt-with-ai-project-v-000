@@ -15,7 +15,7 @@ class Game
   def initialize(player_1, player_2, board)
     self.player_1=player_1
     self.player_2=player_2
-    self.board=[]]
+    self.board=[]
   end
 
   def current_player
