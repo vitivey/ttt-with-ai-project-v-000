@@ -6,18 +6,20 @@ puts "Welcome to Tic Tac Toe!"
 def start
   puts "What type of game do you want to play? 0,1, or 2 player"
   type=gets.strip
+  puts "What type of game do you want to play? 0,1, or 2 player" if type.to_i <0 || type.to_i >2
+  type=gets.strip if type.to_i <0 || type.to_i >2
   puts "Who should go first? (and be X) Computer or Human?" if type.to_i == 1
   first=gets if type.to_i == 1
 
     case type
-    when 0
-      Game.create(Players::Computer.new("X"), Players::Computer.new("O"), Board.new)
-    when 1 && first=="Human"
-      Game.create(Players::Human.new("X"), Players::Computer.new("O"), Board.new)
-    when 1 && first=="Computer"
-      Game.create(Players::Computer.new("X"), Players::Human.new("O"), Board.new)
-    when 2
-      Game.create(Players::Human.new("X"), Players::Human.new("O"), Board.new)
+      when 0
+        Game.create(Players::Computer.new("X"), Players::Computer.new("O"), Board.new)
+      when 1 && first=="Human"
+        Game.create(Players::Human.new("X"), Players::Computer.new("O"), Board.new)
+      when 1 && first=="Computer"
+        Game.create(Players::Computer.new("X"), Players::Human.new("O"), Board.new)
+      else
+        Game.create(Players::Human.new("X"), Players::Human.new("O"), Board.new)    
     end
 end
 start
