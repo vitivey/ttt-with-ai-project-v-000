@@ -6,15 +6,15 @@ module Players
 
       def move(board)
         opponent_token="X"
-        opponent_token="O"if self.token=="X"
-        
+        opponent_token="O" if self.token=="X"
+        binding.pry
         Game.WIN_COMBINATIONS.select do |win_option|
           match_check=board.cells.values_at(win_option[0],win_option[1],win_option[2])
           combo=win_option if match_check.all?{|token| token=="X"}
           combo=win_option if match_check.all?{|token| token=="O"}
         end
 
-        
+
           array = []
           array_corners=[]
           board.cells.each_with_index {|position, index| array << "#{index+1}" if position == " " }
