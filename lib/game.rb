@@ -29,7 +29,7 @@ class Game
   end
 
   def won?
-    x_wins = board.cells.map {|token| board.cells(token).index binding.pry if token == "X" }
+    x_wins = board.cells.map {|token| binding.pry board.cells(token).index  if token == "X" }
     WIN_COMBINATIONS.select do |win_option|
 
     end
