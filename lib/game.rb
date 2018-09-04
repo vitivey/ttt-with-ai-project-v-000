@@ -71,12 +71,8 @@ class Game
 
 
   def play
-    while board.turn_count <= board.cells.size
+    until won? || draw? || over?
       turn
-      over?
-      won?
-      draw?
-      binding.pry
     end
 
     "Congratulations #{winner}!" if won?
