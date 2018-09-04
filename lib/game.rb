@@ -15,7 +15,7 @@ class Game
   def initialize(player_1, player_2, board)
     self.player_1=player_1.token
     self.player_2=player_2.token
-    self.board=board
+    self.board=board.cells
   end
 
   def current_player
