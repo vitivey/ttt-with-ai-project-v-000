@@ -28,4 +28,8 @@ start
 
 puts "Would you like to play again? y/n"
 input = gets
-start if input=="y"
+if input=="y"
+  start
+else
+  "Thank you for playing"
+end
