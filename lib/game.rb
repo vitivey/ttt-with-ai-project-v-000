@@ -61,14 +61,13 @@ class Game
 
   def turn
 
-      value = player_1.move(board)
+      value = current_player.move(board)
       if board.valid_move?(value)
         value
       else
         puts "invalid"
-        value = player_1.move(board)
+        value = current_player.move(board)
       end
-      value = player_2.move(board)
 
   end
 
