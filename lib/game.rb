@@ -46,6 +46,7 @@ class Game
     else
       false
     end
+    
   end
 
   def draw?
