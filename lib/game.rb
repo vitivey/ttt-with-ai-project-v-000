@@ -22,9 +22,9 @@ class Game
 
   def current_player
     if player_1.token == "X" && board.turn_count.even?
-      "X"
+      player_1
     else
-      "O"
+      player_2
     end
   end
 
