@@ -82,7 +82,7 @@ class Game
   def self.create(player_1, player_2, board)
     game=Game.new(player_1, player_2, board)
     board.display
-    play
+    game.play
   end
 
 end
