@@ -22,6 +22,7 @@ class Game
 
   def current_player
     if player_1.token == "X" && board.turn_count.even?
+      binding.pry
       "X"
     else
       "O"
