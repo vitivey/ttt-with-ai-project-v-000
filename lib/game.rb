@@ -30,12 +30,13 @@ class Game
   end
 
   def won?
+    combo=[]
     WIN_COMBINATIONS.select do |win_option|
 
       match_check=board.cells.values_at(win_option[0],win_option[1],win_option[2])
-      win_option if match_check.all?{|token| token=="X" || token =="O"}
+      combo=win_option if match_check.all?{|token| token=="X" || token =="O"}
     end
-
+    combo
   end
 
   def draw?
